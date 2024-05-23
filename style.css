@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Por padrão, o nossos projetos ja vem com estilos pronto, e para conseguirmos ficarmos responsaveis pelos nossos estilos
+nos precisamos resetar as configurações já prontas por padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  /* 100vh = significa 100% do nosso viewport que é toda visualização da tela, isso é um padrão em todo projeto...*/
+  height: 100vh;
+  /*  border-box = nos utilizamos ele para que toda classe filho do nosso elemento não sai para fora dele*/
+  box-sizing: border-box;
+  background: #17161F;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  color: white;
+}
+
+.title-destaque {
+  color: #518CF5;
+}
+
+
+/* Flexbox - é uma ferramenta que serve para organizar os elementos de forma dinamica na página */
+.apresentacao {
+  /* O display flex é para servir o elemento pai ele vai pegar todos os filhos dele e colocar na mesma linha*/
+  display: flex;
+  align-items: center;
+  /* justify-content = faz com que os elementos filhos se distanciem um dos outros, abaixo a gente faz com que cada um ficasse de
+  um lado da tela */
+  justify-content: space-between;
+  /* margin = afasta o elemento do elemento pai, nesse caso o elemento pai é o body */
+  margin: 10% 20%;
+}
+
+.apresentacao-section {
+  width: 615px;
+  display: flex;
+  /* flex-direction = faz com que todos os elementos filhos da classe pai, fiquem na direção escolhida
+  neste caso ele fica na posição coluna, que é um filho abaixo do outro */
+  flex-direction: column;
+  /* gap = espaçamentos entre os elementos filhos */
+  gap: 40px;
+}
+
+.apresentacao-section-title {
+  font-family: "Krona One", sans-serif;
+  font-size: 36px;
+}
+
+.apresentacao-section-texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+.apresentacao-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apresentacao-links-link {
+  background-color: #518CF5;
+  text-decoration: none;
+  width: 280px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 24px;
+  padding: 21.5px 0;
+  color: #17161F;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+img {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+}
