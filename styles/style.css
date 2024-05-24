@@ -177,6 +177,7 @@ p {
 
   .cabecalho-menu {
     justify-content: center;
+    gap: 50px;
   }
 
   .apresentacao {
