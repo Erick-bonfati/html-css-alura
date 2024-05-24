@@ -40,7 +40,7 @@ body {
   color: var(--cor-secundaria);
   font-family: var(--fonte-secundaria);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;  /* a medida "REM" serve para acompanhar as medidas do navegador, independente do tamanho*/
   text-decoration: none;
 }
 
@@ -68,10 +68,11 @@ p {
   justify-content: space-between;
   /* margin = afasta o elemento do elemento pai, nesse caso o elemento pai é o body */
   padding: 6% 20%;
+  gap: 70px
 }
 
 .apresentacao-section {
-  width: 630px;
+  width: 50%;
   display: flex;
   /* flex-direction = faz com que todos os elementos filhos da classe pai, fiquem na direção escolhida
   neste caso ele fica na posição coluna, que é um filho abaixo do outro */
@@ -82,12 +83,12 @@ p {
 
 .apresentacao-section-title {
   font-family: var(--fonte-primaria);
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .apresentacao-section-texto {
   font-family: var(--fonte-secundaria);
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .apresentacao-section-ul {
@@ -99,7 +100,7 @@ p {
 
 .apresentacao-section-li {
   font-family: var(--fonte-secundaria);
-  font-size: 18px;
+  font-size: 1.1rem;
   color: var(--cor-terciaria);;
 }
 
@@ -127,18 +128,18 @@ p {
   font-family: var(--fonte-primaria);
   color: var(--cor-terciaria);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
-.apresentacao-links-link {
+.apresentacao-links-navegacao {
   display: flex;
   justify-content: center;
   border: 2px solid var(--cor-secundaria);
   text-decoration: none;
-  width: 280px;
+  width: 50%;
   text-align: center;
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 1.1rem;
   padding: 12px 0;
   color: var(--cor-terciaria);
   font-family: var(--fonte-secundaria);
@@ -147,13 +148,13 @@ p {
   transition: 1s;
 }
 
-.apresentacao-links-link:hover{
+.apresentacao-links-navegacao:hover{
   background-color: #292833;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .foto-pessoal{
-  width: 350px;
+  width: 40%;
   height: 500px;
   border-radius: 10px;
 }
@@ -164,5 +165,30 @@ p {
   padding: 24px;
   text-align: center;
   font-family: var(--fonte-secundaria);
-  font-size: 18px;
+  font-size: 1.1rem;
+}
+
+
+@media (max-width: 1130px) {
+
+  .cabecalho {
+    padding: 5%;
+  }
+
+  .cabecalho-menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse; /* column-reserva = troca a posição dos elementos */
+    padding: 5%;
+  }
+
+  .apresentacao-section {
+    width: 100%;
+  }
+
+  .foto-pessoal {
+    width: 90%;
+  }
 }
