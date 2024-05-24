@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* :root = declarando uma variavel para salvar todas as cores principais do nosso projeto */
+:root {
+  --cor-primaria: #17161F;
+  --cor-secundaria: #89CFF3;
+  --cor-terciaria: #FFFFFF;
+  
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+/* Por padrão, o nossos projetos ja vem com estilos pronto, e para conseguirmos ficarmos responsaveis pelos nossos estilos
+nos precisamos resetar as configurações já prontas por padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  /* 100vh = significa 100% do nosso viewport que é toda visualização da tela, isso é um padrão em todo projeto...*/
+  /* height: 100vh; */
+  /*  border-box = nos utilizamos ele para que toda classe filho do nosso elemento não sai para fora dele*/
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+}
+
+.cabecalho {
+  padding: 2% 0 0 20% ;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho-menu-link {
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--cor-terciaria);
+  font-weight: bold;
+}
+
+p {
+  color: var(--cor-terciaria);
+}
+
+.title-destaque {
+  color: #00A9FF;
+}
+
+
+/* Flexbox - é uma ferramenta que serve para organizar os elementos de forma dinamica na página */
+.apresentacao {
+  /* O display flex é para servir o elemento pai ele vai pegar todos os filhos dele e colocar na mesma linha*/
+  display: flex;
+  align-items: center;
+  /* justify-content = faz com que os elementos filhos se distanciem um dos outros, abaixo a gente faz com que cada um ficasse de
+  um lado da tela */
+  justify-content: space-between;
+  /* margin = afasta o elemento do elemento pai, nesse caso o elemento pai é o body */
+  padding: 6% 20%;
+}
+
+.apresentacao-section {
+  width: 630px;
+  display: flex;
+  /* flex-direction = faz com que todos os elementos filhos da classe pai, fiquem na direção escolhida
+  neste caso ele fica na posição coluna, que é um filho abaixo do outro */
+  flex-direction: column;
+  /* gap = espaçamentos entre os elementos filhos */
+  gap: 37px;
+}
+
+.apresentacao-section-title {
+  font-family: var(--fonte-primaria);
+  font-size: 28px;
+}
+
+.apresentacao-section-texto {
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
+}
+
+.apresentacao-section-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
+.apresentacao-section-li {
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
+  color: var(--cor-terciaria);;
+}
+
+.li-destaque {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+.li-destaque:hover{
+  color: #9ec2ff;
+  text-decoration: underline;
+}
+
+
+
+.apresentacao-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.apresentacao-links-subtitle {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-terciaria);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.apresentacao-links-link {
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--cor-secundaria);
+  text-decoration: none;
+  width: 280px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 12px 0;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  gap: 6px;
+  transition: 1s;
+}
+
+.apresentacao-links-link:hover{
+  background-color: #292833;
+  font-size: 20px;
+}
+
+.foto-pessoal{
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.rodape {
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);;
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
+}

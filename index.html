@@ -5,10 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu portifólio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+
+      <nav class="cabecalho-menu">
+
+        <a href="index.html" class="cabecalho-menu-link">Home</a>
+        <a href="about.html" class="cabecalho-menu-link">Sobre mim</a>
+        <a href="curriculo.html" class="cabecalho-menu-link">Currículo</a>
+
+      </nav>
+
+    </header>
+
     <main class="apresentacao">
 
       <section class="apresentacao-section">
@@ -18,16 +29,33 @@
         <p class="apresentacao-section-texto">Olá! Sou Erick Bonfati, desenvolvedor web full-stack com especialidade em Node.JS, HTML e CSS e Javascript.
           Desenvolvo pequenos projetos e estou sempre em busca de novos aprendizados!</p>
         
-        <div class="apresentacao-links">  
-          <a href="https://github.com/" class="apresentacao-links-link">Instagram</a>
-          <a href="https://www.instagram.com/" class="apresentacao-links-link">Github</a>
+        <div class="apresentacao-links">
+          <h2 class="apresentacao-links-subtitle">Acesse minhas redes:</h2>  
+          <a href="https://github.com/" class="apresentacao-links-link" target="_blank">
+            <img src="./assets/github.png">
+            Github
+          </a>
+
+          <a href="https://www.instagram.com/" class="apresentacao-links-link" target="_blank">
+            <img src="./assets/instagram.png">
+            Instagram
+          </a>
+
+          <a href="https://www.linkedin.com/" class="apresentacao-links-link" target="_blank">
+            <img src="./assets/linkedin.png">
+            Linkedin
+          </a>
+
         </div>
       
       </section>
 
-      <img src="foto.jpeg" alt="Minha foto pessoal" style=>
+      <img src="./assets/foto.jpeg" alt="Minha foto pessoal" class="foto-pessoal">
 
     </main>
-    <footer></footer>
+
+    <footer class="rodape">
+      <p>Desenvolvido por Erick.</p>
+    </footer>
 </body>
 </html>
